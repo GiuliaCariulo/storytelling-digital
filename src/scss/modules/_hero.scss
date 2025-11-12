@@ -7,7 +7,7 @@
   width: 100vw;
   height: 80vw;
   position: absolute;
-  bottom: 5%;
+  bottom: 0;
 }
 
 .hero-mountain-2 {
@@ -26,9 +26,17 @@
 }
 
 .hero-title {
-  width: 50vw;
+  width: 75vw;
   position: absolute;
-  left: 25%;
-  bottom: 40%;
+  left: 14%;
+  top: 25%;
+  z-index: 2;
+}
+
+.hero-sabre {
+  width: 30vw;
+  position: absolute;
+  left: 5%;
+  bottom: 15%;
   z-index: 2;
 }
