@@ -28,6 +28,7 @@ header nav {
   position: fixed;
   top: 30px;
   right: 65px;
+  z-index: 1000;
 }
 
 button {
@@ -39,7 +40,16 @@ button {
   opacity: 0.5;
 }
 
+button:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
+
 #megaphone svg {
   position: relative;
   top: 2px;
+}
+
+#megaphone:hover path {
+  fill: var(--white);
 }
