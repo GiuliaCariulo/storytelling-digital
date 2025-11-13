@@ -1,27 +1,27 @@
 .hero {
   height: 100vw;
   position: relative;
+  overflow: hidden;
 }
 
 .hero-mountain-1 {
   width: 100vw;
-  height: 80vw;
   position: absolute;
-  bottom: 0;
+  bottom: 6%;
 }
 
 .hero-mountain-2 {
   width: 100vw;
   position: absolute;
   right: 0;
-  bottom: 10%;
+  bottom: 30%;
   z-index: 1;
 }
 
 .hero-mountain-3 {
   width: 85vw;
   position: absolute;
-  bottom: 10%;
+  bottom: 30%;
   z-index: 3;
 }
 
@@ -29,7 +29,7 @@
   width: 75vw;
   position: absolute;
   left: 14%;
-  top: 25%;
+  top: 10%;
   z-index: 2;
 }
 
