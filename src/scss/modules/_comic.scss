@@ -1,0 +1,24 @@
+.comic-box img {
+  height: 50vw;
+  border: 4px solid var(--black);
+}
+
+.comic-scroll-horizontal {
+  height: 60vw;
+  display: inline-flex;
+  justify-content: flex-start;
+  gap: 50px;
+  align-items: end;
+  border: 1px solid red;
+}
+
+.comic-scroll-container {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(../img/flowers.png) no-repeat top 10px right 0;
+  background-size: 40%;
+  background-attachment: fixed;
+  border: 4px solid blue;
+}
