@@ -32,7 +32,7 @@ gsap.to(comicHorizontalScroll, {
   scrollTrigger: {
     trigger: ".comic-scroll-container",
     start: "top 20%",
-    end: () => `+=${scrollWidth}`,
+    end: () => `+=${scrollWidth - window.innerWidth}`,
     scrub: 1,
     pin: true,
     anticipatePin: 1,
