@@ -21,6 +21,10 @@ video {
   display: block;
 }
 
+body {
+  position: relative;
+}
+
 header nav {
   display: flex;
   justify-content: end;
