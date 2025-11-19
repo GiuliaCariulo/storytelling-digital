@@ -1,12 +1,42 @@
-.fall img {
-  border: 4px solid var(--black);
-  height: 50vw;
-}
-
 .fall-first-part {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 200px;
+}
+.fall-first-part img {
+  border: 4px solid var(--black);
+  height: 50vw;
+}
+
+.fall-second-part {
+  position: relative;
+  height: 100vw;
+  width: 100vw;
+}
+
+#rocks-1 {
+  position: absolute;
+  top: 0;
+}
+
+#rocks-2 {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  transform: rotate(90deg);
+}
+
+#rocks-3 {
+  position: absolute;
+  top: 0;
+  right: -5%;
+}
+
+#rocks-4 {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  transform: rotate(-20deg);
 }
