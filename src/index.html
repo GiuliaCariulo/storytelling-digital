@@ -13,9 +13,9 @@
     />
   </head>
   <body>
-    <header>
+    <header id="accueil">
       <nav>
-        <button>Obtenir le livre</button>
+        <button><a href="#acheter">Obtenir le livre</a></button>
         <button id="megaphone">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,7 @@
           <img id="rocks-4" src="img/rock-4.png?as=webp" alt="rocks" />
         </div>
       </section>
-      <section class="product">
+      <section id="acheter" class="product">
         <img
           class="product-cover"
           src="img/cover.jpg"
@@ -133,7 +133,7 @@
         />
         <div class="product-info">
           <h2>
-            <img src="img/title-black.png?as=webp" alt="Sabre" />
+            <img src="img/title-brown.svg?as=webp" alt="Sabre" />
           </h2>
           <p class="product-author">Écrit par Éric Feres</p>
           <p class="product-resume">
@@ -144,7 +144,46 @@
           <button>Acheter</button>
         </div>
       </section>
-      <footer>footer</footer>
+      <footer>
+        <img
+          src="img/logo-dargaud.svg?as=webp"
+          alt="logo de la maison d'édition Dargaud"
+        />
+        <nav>
+          <li>
+            <ul>
+              <a href="#accueil">Accueil</a>
+            </ul>
+            <ul>
+              <a
+                href="https://www.dargaud.com/bd/sabre-bda5275580"
+                target="_blank"
+                >Commander</a
+              >
+            </ul>
+            <ul>
+              <a href="#contact">Contact</a>
+            </ul>
+          </li>
+        </nav>
+        <div class="footer-general">
+          <li>
+            <ul>
+              À propos
+            </ul>
+            <ul>
+              Point de vente
+            </ul>
+            <ul>
+              S’abonner a la Newsletter
+            </ul>
+          </li>
+        </div>
+        <p>©Dargaud 2025</p>
+      </footer>
+      <div class="footer-background">
+        <img src="img/mountain-4.png?as=webp" alt="montagne" />
+      </div>
     </body>
     <script src="js/main.js" type="module"></script>
   </body>
