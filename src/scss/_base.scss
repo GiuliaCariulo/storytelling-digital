@@ -11,6 +11,7 @@
   padding: 0;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
+  font-size: 20px;
   color: var(--brown);
   scroll-behavior: smooth;
 }
@@ -40,6 +41,7 @@ header nav {
 }
 
 button {
+  font-size: 15px;
   background-color: var(--white);
   padding: 3px 27px;
   border: 1px solid var(--black);
@@ -68,4 +70,13 @@ a {
 footer p,
 footer ul {
   color: var(--white);
+}
+
+footer img {
+  width: 300px;
+}
+
+footer p {
+  padding: 15px 0 30px;
+  text-align: center;
 }
