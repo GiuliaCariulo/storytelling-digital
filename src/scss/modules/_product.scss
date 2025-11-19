@@ -1,11 +1,32 @@
 .product {
-  padding: 65px;
+  display: flex;
+  gap: 75;
+  justify-content: center;
 }
 
 .product img {
-  width: 40%;
+  width: 600px;
+}
+
+.product-cover {
+  border: 4px solid var(--black);
+  width: 600px;
+}
+
+.product-info {
+  width: 500px;
 }
 
 .product-info img {
-  width: 20%;
+  width: 200px;
+}
+
+.product-author {
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+.product-resume {
+  font-size: 20px;
+  margin-bottom: 100px;
 }
