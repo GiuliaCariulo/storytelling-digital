@@ -15,6 +15,8 @@
 
 .product-info {
   width: 500px;
+  font-weight: 100;
+  text-align: justify;
 }
 
 .product-info img {
@@ -24,8 +26,13 @@
 .product-author {
   font-size: 25px;
   margin: 15px 0;
+  font-weight: 300;
 }
 
 .product-resume {
   margin-bottom: 50px;
+}
+
+.product button {
+  font-size: 20px;
 }
