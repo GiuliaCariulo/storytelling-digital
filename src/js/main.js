@@ -4,21 +4,21 @@ gsap.registerPlugin(ScrollTrigger);
 
 // HERO PARALLAX_______________________________________________________
 
-let hero = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".hero",
-    start: "top top",
-    end: "+=100%",
-    scrub: 1,
-    pin: true,
-  },
-});
+// let hero = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".hero",
+//     start: "top top",
+//     // end: "+=100%",
+//     scrub: 1,
+//     pin: true,
+//   },
+// });
 
-hero.fromTo(".hero-mountain-1", { y: 0 }, { y: -500 }, 0);
-hero.fromTo(".hero-mountain-2", { x: 0, y: 0 }, { x: 800, y: 47 }, 0);
-hero.fromTo(".hero-mountain-3", { x: 0, y: 0 }, { x: -800, y: 47 }, 0);
-hero.fromTo(".hero-title", { scale: 1, y: 0 }, { scale: 0.7, y: -100 }, 0);
-hero.fromTo(".hero-title", { y: -100 }, { scale: 0.7, y: -500 });
+// hero.fromTo(".hero-mountain-1", { y: 0 }, { y: -500 }, 0);
+// hero.fromTo(".hero-mountain-2", { x: 0, y: 0 }, { x: 800, y: 47 }, 0);
+// hero.fromTo(".hero-mountain-3", { x: 0, y: 0 }, { x: -800, y: 47 }, 0);
+// hero.fromTo(".hero-title", { scale: 1, y: 0 }, { scale: 0.7, y: -100 }, 0);
+// hero.fromTo(".hero-title", { y: -100 }, { scale: 0.7, y: -500 });
 
 // Sabre's walking on comic box_______________________________________________________
 
@@ -27,17 +27,21 @@ const comicHorizontalScroll = document.querySelector(
 );
 const scrollWidth = comicHorizontalScroll.scrollWidth - window.innerWidth + 100;
 
-gsap.to(comicHorizontalScroll, {
-  x: -scrollWidth,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".comic-scroll-container",
-    start: "top top",
-    end: "+=200%",
-    scrub: 1,
-    pin: true,
-    anticipatePin: 1,
-  },
-});
-
-// Sabre's pushing by the paw
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".comic-scroll-container",
+      start: "top top",
+      end: "+=200%",
+      scrub: 1,
+      pin: true,
+      anticipatePin: 1,
+    },
+  })
+  .to(comicHorizontalScroll, {
+    x: -scrollWidth,
+    ease: "none",
+  })
+  .to("#paw-rock", {
+    rotation: 20,
+  });
