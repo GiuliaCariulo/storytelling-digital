@@ -25,7 +25,7 @@ hero.fromTo(".hero-title", { y: -100 }, { scale: 0.7, y: -500 });
 const comicHorizontalScroll = document.querySelector(
   ".comic-scroll-horizontal"
 );
-const scrollWidth = comicHorizontalScroll.scrollWidth - window.innerWidth;
+const scrollWidth = comicHorizontalScroll.scrollWidth - window.innerWidth + 100;
 
 gsap.to(comicHorizontalScroll, {
   x: -scrollWidth,
