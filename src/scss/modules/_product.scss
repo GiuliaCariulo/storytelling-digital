@@ -33,6 +33,17 @@
   margin-bottom: 50px;
 }
 
-.product button {
+.product a {
   font-size: 20px;
+  background-color: var(--white);
+  padding: 3px 27px;
+  border: 1px solid var(--black);
+  border-radius: 4px;
+  // opacity: 0.5;
+}
+
+.product a:hover {
+  opacity: 0.7;
+  color: var(--white);
+  background-color: var(--black);
 }
