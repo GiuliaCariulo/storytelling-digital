@@ -28,7 +28,7 @@ hero.fromTo(
   ".hero-mountain-3",
   { x: 0 },
   { x: -800, onComplete: sabreExchange },
-  0
+  0,
 );
 hero.fromTo(".hero-title", { scale: 1, y: 0 }, { scale: 0.4, y: -100 }, 0);
 hero.fromTo(".hero-title", { y: -100 }, { y: -400 });
@@ -36,7 +36,7 @@ hero.fromTo(".hero-title", { y: -100 }, { y: -400 });
 // Sabre's walking on comic box_______________________________________________________
 
 const comicHorizontalScroll = document.querySelector(
-  ".comic-scroll-horizontal"
+  ".comic-scroll-horizontal",
 );
 const scrollWidth = comicHorizontalScroll.scrollWidth - window.innerWidth + 100;
 
@@ -45,16 +45,15 @@ gsap
     scrollTrigger: {
       trigger: ".comic-scroll-container",
       start: "top top",
-      end: "+=200%",
-      scrub: 1,
+      end: "+=7000",
+      scrub: 6,
       pin: true,
       anticipatePin: 1,
+      markers: true,
     },
   })
+  // .to(comicHorizontalScroll, {})
   .to(comicHorizontalScroll, {
     x: -scrollWidth,
     ease: "none",
-  })
-  .to("#paw-rock", {
-    rotation: 20,
   });
