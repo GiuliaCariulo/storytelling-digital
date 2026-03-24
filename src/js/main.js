@@ -49,7 +49,6 @@ gsap
       scrub: 6,
       pin: true,
       anticipatePin: 1,
-      markers: true,
     },
   })
   // .to(comicHorizontalScroll, {})
@@ -57,3 +56,19 @@ gsap
     x: -scrollWidth,
     ease: "none",
   });
+
+// Sabre's disapering behing the cover_______________________________________________________
+
+const sabreDisparition = document.querySelector(".sabre");
+const cover = document.querySelector(".product-cover");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      sabreDisparition.style.opacity = entry.isIntersecting ? "0" : "1";
+    });
+  },
+  { threshold: 0 },
+);
+
+observer.observe(cover);
