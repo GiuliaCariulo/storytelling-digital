@@ -1,8 +1,8 @@
 :root {
-  --white: #fff;
-  --black: #000;
-  --brown: #443e30;
-  --yellow: #fdff62;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-brown: #443e30;
+  --color-yellow: #fdff62;
 }
 
 * {
@@ -24,7 +24,7 @@ html {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  color: var(--brown);
+  color: var(--color-brown);
   scroll-behavior: smooth;
 }
 
@@ -45,25 +45,25 @@ header nav {
 
 button {
   font-size: 17px;
-  background-color: var(--white);
+  background-color: var(--color-white);
   padding: 3px 27px;
-  border: 1px solid var(--black);
+  border: 1px solid var(--color-black);
   border-radius: 4px;
   opacity: 0.7;
 }
 
 button:hover {
-  color: var(--white);
-  background-color: var(--black);
+  color: var(--color-white);
+  background-color: var(--color-black);
 }
 
-#megaphone svg {
+#speaker svg {
   position: relative;
   top: 2px;
 }
 
-#megaphone:hover path {
-  fill: var(--white);
+#speaker:hover path {
+  fill: var(--color-white);
 }
 
 a {
@@ -76,7 +76,7 @@ ul {
 
 footer p,
 footer ul {
-  color: var(--white);
+  color: var(--color-white);
 }
 
 footer img {
